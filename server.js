@@ -8,7 +8,7 @@ connectDB();
 // body parser
 app.use(express.json({ extended: false }));
 // routes
-app.use('/api/books', require('./routes/api/users'));
+app.use('/api/books', require('./routes/api/books'));
 /*********************** Heroku Production Setup **********************************/
 // having Express handle routes that are located inside the client folder
 if(process.env.NODE_ENV === 'production') {
